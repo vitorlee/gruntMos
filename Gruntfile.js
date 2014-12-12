@@ -52,7 +52,7 @@
         eqeqeq: true,
         trailing: true
       },
-      files: ['min/**/*.min.js']
+      files: ['../trunk/static/js/*.js']
     },
     //复制文件
     copy: {
@@ -84,7 +84,7 @@
  
   //注册任务
   grunt.registerTask('default', ['less:production', 'uglify:build']);
-  //grunt.registerTask('check', ['jshint:files']);
+  grunt.registerTask('check', ['jshint:files']);
   //grunt.registerTask('move', ['copy:main']);
   grunt.registerTask('live', ['watch:codes']);
 }
