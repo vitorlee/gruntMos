@@ -18,13 +18,14 @@
      },
      uglify: {
          options: {
+          mangle: false
          },
         build: {
             //多文件压缩 !合并
             files: [{
                   expand: true,
                   cwd: '../trunk/static/js', 
-                  src: ['*.js'], 
+                  src: ['*.js', '!*.min.js'], 
                   dest: '../trunk/static/js', 
                   ext: '.min.js' 
               }]
