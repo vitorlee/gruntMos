@@ -12,6 +12,7 @@ MLS openAPI grunt tools
 ## 配置工具
 > sudo npm install
 
+
 ## 命令
 > 编译：grunt
 > 监听：grunt live
