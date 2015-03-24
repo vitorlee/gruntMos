@@ -1,4 +1,4 @@
-MLS openAPI grunt tools
+MLS openAPI grunt tool
 =======================
 ## 功能
 * 压缩CSS、JS文件
