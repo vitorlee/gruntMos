@@ -1,0 +1,179 @@
+/**
+ * fullPage 2.6.0
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ * Modify by Li Guancong
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+@import "../base/atom";
+html, 
+body {
+  .mg(0);
+  .pd(0);
+  .ov-h;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);/*Avoid flicker on slides transitions for mobile phones #336 */
+}
+#superContainer {
+  .h(100%);
+  .pos-r;
+  -ms-touch-action: none;/* Touch detection for Windows 8 */
+  touch-action: none;/* IE 11 on Windows Phone 8.1*/
+}
+.fp-section {
+  .pos-r;
+  .box-sizing(border-box);
+}
+.fp-slide {
+  .fl-l;
+}
+.fp-slide, 
+.fp-slidesContainer {
+  .h(100%);
+  .d-b;
+}
+.fp-slides {
+  .z(1);
+  .h(100%);
+  .ov-h;
+  .pos-r;
+  .transition(all 0.3s ease-out);
+}
+.fp-section.fp-table, 
+.fp-slide.fp-table {
+  .d-tb(table);
+  table-layout:fixed;
+  .w(100%);
+}
+.fp-tableCell {
+  .d-tb(table-cell);
+  .va(middle);
+  .s(100%,100%);
+}
+.fp-slidesContainer {
+  .fl-l;
+  .pos-r;
+}
+.fp-controlArrow {
+  .pos-a;
+  .z(4);
+  top: 50%;
+  .cur-p;
+  .s(0,0);
+  border-style: solid;
+  .mg-t(-38px);
+  .transform(translate3d(0,0,0));
+  &.fp-prev {
+    left: 15px;
+    .w(0); 
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent; 
+  }
+  &.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+.fp-scrollable {
+  overflow: scroll;
+}
+.fp-notransition {
+  .transition(none) !important;
+}
+#fp-nav {
+  .pos-f;
+  .z(100);
+  .mg-t(-32px);
+  top:50%;
+  .opacity(1);
+  .transform(translate3d(0,0,0));
+  &.right {
+    right: 17px;
+  }
+  &.left {
+    left: 17px;
+  }
+}
+.fp-slidesNav{
+  .pos-a;
+  .z(4);
+  left: 50%;
+  .opacity(4);
+  &.bottom {
+    bottom: 17px;
+  }
+  &.top {
+    top: 17px;
+  }
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  .d-b;
+  .s(13px,14px);
+  .mg(7px);
+  .pos-r;
+}
+.fp-slidesNav ul li {
+  .d-ib(inline-block);
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  .d-b;
+  .pos-r;
+  .z(1);
+  .s(100%,100%);
+  .cur-p;
+  .td-n;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+  .s(12px,12px);
+  .mg(-6px 0 0 -6px);
+  border-radius: 100%;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  .pos-a;
+  .z(1);
+  .s(4px,4px);
+  border: 0;
+  .bg(#333);
+  left: 50%;
+  top: 50%;
+  .mg(-2px 0 0 -2px);
+  .transition(all 0.1s ease-in-out);
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+  .s(10px,10px);
+  .mg(-5px 0px 0px -5px);
+}
+#fp-nav ul li .fp-tooltip {
+  .pos-a;
+  top: -2px;
+  .c(#fff);
+  .fz(14px);
+  .ff(@fontBase);
+  .nowrap;
+  max-width: 220px;
+  .ov-h;
+  .d-b;
+  .opacity(0);
+  .w(0);
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  .transition(opacity 0.2s ease-in);
+  .w(auto);
+  .opacity(1);
+}
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px;
+}

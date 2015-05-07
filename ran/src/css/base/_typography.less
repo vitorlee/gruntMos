@@ -1,0 +1,70 @@
+/**
+ * Name:         Typography
+ * Description:  Values about font, color, size, text-align, etc.
+ * Author:       Li Guancong
+ */
+
+// Font Color
+.c(@color){
+  color: @color;
+}
+
+// Font style
+.fz(@var){
+  font-size: @var;
+}
+// Font Family
+.ff(@var){
+  font-family: @var;
+}
+// Font Weight
+.fw-b(){
+  font-weight: bold;
+}
+.fw-n(){
+  font-weight: normal;
+}
+// Line Height
+.lh(@var){
+  line-height: @var;
+}
+
+// Text align
+.ta-c(){
+  text-align: center;
+}
+.ta-l(){
+  text-align: left;
+}
+.ta-r(){
+  text-align: right;
+}
+
+// Text Ellipsis
+.tov-e() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Text Decoration
+.td-n(){
+  text-decoration: none;
+}
+.td-u(){
+  text-decoration: underline;
+}
+
+// Word break
+.break-word(){
+  word-wrap: break-word;
+}
+.break-all(){
+  word-wrap: break-word; 
+  word-break: break-all;
+}
+.nowrap(){
+  white-space: nowrap;
+}
+
+

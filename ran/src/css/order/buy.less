@@ -1,0 +1,253 @@
+@import "../default/common";
+.common_header{
+  .title{
+    .pd-r(60px);
+  }
+}
+.order_type{
+  .ov-h;
+  .w(310px);
+  .mg(30px auto 10px);
+  a{
+    .d-b;
+    .s(112px,82px);
+    .pd(15px 10px);
+    .bg(#fff);
+    border:4px solid #f0f0f0;
+    .fl-l;
+    .mg(0 7px);
+    .pos-r;
+    &.user{
+      .s(205px,92px);
+      .mg(0 auto 30px);
+      .fl-n;
+      p:nth-child(1){
+        .fz(1.8rem);
+      }
+      p:nth-child(3){
+        .fz(1.2rem);
+        .c(#6e6e6e);
+        .lh(20px);
+        .ta-c;
+      }
+    }
+    p:nth-child(1){
+      .fz(1.4rem);
+      .c(#222);
+      .lh(20px);
+      .ta-c;
+      .mg-b(10px;)
+    }
+    p:nth-child(2){
+      .ta-c;
+      b{
+        .fz(4.7rem);
+        .c(#ff5a00);
+        font-style: italic;
+      }
+      span{
+        .fz(1.4rem);
+        .c(#222);
+      }
+    }
+    
+    i{
+      .d-n;
+    }
+    &.on{
+      border-color: #ff5a00;
+      i{
+        .pos-a;
+        .d-b;
+        .s(22px,22px);
+        right:0;
+        top:0;
+        .icon_img;
+        background-position: -36px -120px;
+      }
+    }
+  }
+}
+.order_tips{
+  .s(300px,20px);
+  .mg(0 auto 10px);
+  .s(300px,20px);
+  .fz(1.2rem);
+  .c(#6e6e6e);
+  .lh(20px);
+  .ta-l;
+}
+.order_coupon{
+  .s(300px,30px);
+  .mg(0 auto 10px);
+  input[type="checkbox"]{
+    .mg-r(5px);
+    -webkit-appearance: none;
+    border:0 none;
+    .d-b;
+    .fl-l;
+    .s(30px,30px);
+    .icon_img;
+    background-position: -43px -50px;
+  }
+  input[type="checkbox"]:checked {
+    background-position: -33px -85px;
+  }
+  label{
+    .d-b;
+    .fl-l;
+    .lh(30px);
+    .fz(1.6rem);
+    .c(#6e6e6e);
+  }
+}
+.order_payment{
+  .s(300px,30px);
+  .fz(1.6rem);
+  .c(#6e6e6e);
+  .mg(0 auto 18px);
+  text-indent: 35px;
+  .lh(30px);
+  .icon_img;
+  background-position: -33px -84px;
+}
+.order_count{
+  .w(300px);
+  .pd(10px 0);
+  .mg(0 auto 10px);
+  border-top: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+  p{
+    .h(24px);
+    .lh(24px);
+    .flexbox;
+    span{
+      .d-b;
+      .fz(1.6rem);
+      .c(#6e6e6f);
+      .ta-r;
+      &:nth-child(1){
+        .w(80px;)
+      }
+      &:nth-child(2){
+        .box-flex(1);
+      }
+    }
+  }
+}
+.order_amount{
+  .s(300px,30px);
+  .lh(30px);
+  .pd(10px 0);
+  .mg(0 auto 10px);
+  .flexbox;
+  span{
+    .d-b;
+    .fz(1.6rem);
+    .c(#6e6e6f);
+    .ta-r;
+    &:nth-child(1){
+      .w(80px;)
+    }
+    &:nth-child(2){
+      .box-flex(1);
+      b{
+        .fz(2.4rem);
+        .c(#ff5a00);
+        .fw-b;
+      }
+    }
+  }
+}
+.confirm_pay{
+  .d-b;
+  .pd(0);
+  .s(300px,45px);
+  .lh(45px);
+  .bg(#ff5a00);
+  .c(#fff);
+  .fz(1.4rem);
+  .ta-c;
+  .mg(0 auto 30px);
+  border:0 none;
+  border-radius: 5px;
+  &:disabled{
+    .bg(#969696);
+    .c(#fff);
+  }
+}
+
+.buy_info{
+  .w(300px);
+  .mg(0 auto 30px);
+  .fz(1.3rem);
+  .c(#6e6e6e);
+  .lh(20px);
+  .ta-l;
+  &.user{
+    .mg-t(10px);
+    b{
+      .c(#ff5a00);
+      .fw-n;
+    }
+  }
+}
+
+.layer{
+  .d-n;
+  .s(100%,100%);
+  .bg(rgba(0,0,0,0.7));
+  .pos-a;
+  top: 0;
+  left: 0;
+  .z(99);
+}
+.confirm_box{
+  .d-n;
+  .pos-a;
+  .w(90%);
+  .z(100);
+  .bg(#fff);
+  h4{
+    .fz(1.3rem);
+    .c(#222);
+    .bg(#f0f0f0);
+    .h(45px);
+    .lh(45px);
+    .ta-c;
+    border:1px solid #e3e3e3;
+  }
+  .confirm_btn{
+    border-left:1px solid #e3e3e3;
+    border-right:1px solid #e3e3e3;
+    border-bottom:1px solid #e3e3e3;
+    .flexbox;
+    a{
+      .d-b;
+      .box-flex(1);
+      .h(45px);
+      .ta-c;
+      .fz(1.4rem);
+      .lh(45px);
+      .c(#969696);
+      &.btn_close{
+        .c(#ff5a00);
+      }
+      &.btn_ok{
+        .c(#ff5a00);
+        border-left:1px solid #e3e3e3;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

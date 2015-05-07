@@ -60,6 +60,7 @@
       options: {
           livereload: true,
           spawn: false,
+          event: ['changed']
         },
        codes: {
         files: ['../trunk/static/script/*.js','../trunk/static/less/*.less'],

@@ -1,0 +1,106 @@
+/**
+ * Name:         Position
+ * Description:  Declear display, padding, margin
+ * Author:       Li Guancong
+ */
+
+// Display
+.ov-h(){
+  overflow: hidden;
+}
+.v-h(){
+  visibility:hidden;
+}
+.d-n(){
+  display: none;
+}
+.d-i(){
+  display: inline;
+}
+.d-b(){
+  display: block;
+}
+.d-ib(@arg){
+  display: @arg;
+}
+.d-tb(@arg){
+  display: @arg;
+}
+
+// Position for 'positon', 'float', and 'clearfix'
+.fl-n(){
+  float: none;
+}
+.fl-l(){
+  float: left;
+}
+.fl-r(){
+  float: right;
+}
+.pos-a(){
+  position: absolute;
+}
+.pos-r(){
+  position: relative;
+}
+.pos-f(){
+  position: fixed;
+}
+.pos-s(){
+  position: static;
+}
+
+// margin
+.mg(@var){
+  margin: @var;
+}
+.mg-t(@var){
+  margin-top: @var;
+}
+.mg-b(@var){
+  margin-bottom: @var;
+}
+.mg-l(@var){
+  margin-left: @var;
+}
+.mg-r(@var){
+  margin-right: @var;
+}
+.mg-tb(@var1;@var2){
+  margin-top: @var1;
+  margin-bottom: @var2;
+}
+.mg-lr(@var1;@var2){
+  margin-left: @var1;
+  margin-right: @var2;
+}
+
+// padding
+.pd(@var){
+  padding: @var;
+}
+.pd-l(@var){
+  padding-left: @var;
+}
+.pd-r(@var){
+  padding-right: @var;
+}
+.pd-t(@var){
+  padding-top: @var;
+}
+.pd-b(@var){
+  padding-bottom: @var;
+}
+.pd-tb(@var1;@var2){
+  padding-top: @var1;
+  padding-bottom: @var2;
+}
+.pd-lr(@var1;@var2){
+  padding-left: @var1;
+  padding-right: @var2;
+}
+
+// vertical-align
+.va(@arg){
+  vertical-align: @arg;
+}

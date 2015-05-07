@@ -1,0 +1,21 @@
+/**
+ * Name:         Clearfix
+ * Description:  Clear float
+ * Author:       Li Guancong
+ */
+
+// Clearfix
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/*
+.clearfix:after{clear:both;display:block;height:0;line-height:0;content:'';}
+.clearfix{zoom:1;}*/

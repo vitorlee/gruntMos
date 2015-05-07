@@ -1,0 +1,58 @@
+@import "../base/atom";
+.icon_img(){
+  background-image: url("@{baseUrl}dist/img/yue/icon.png");
+  background-repeat: no-repeat;
+  background-size: 100px 200px;
+}
+.common_header{
+  .h(45px);
+  .bg(#f0f0f0);
+  .flexbox;
+  .pd(0px 10px);
+  .back{
+    .d-b;
+    .s(60px,19px);
+    .c(#222);
+    .lh(19px);
+    .fz(1.4rem);
+    .mg(13px 0);
+    text-indent: 20px;
+    .icon_img;
+    background-position: 0 -2px;
+  }
+  .title{
+    .box-flex(1);
+    .fz(1.4rem);
+    .fw-n;
+    .c(#222);
+    .lh(45px);
+    .ta-c;
+  }
+  .me{
+    .d-b;
+    .w(28px);
+    .lh(45px);
+    .pd-r(10px);
+    text-indent: -9999px;
+    .icon_img;
+    background-position: -1px -28px;
+  }
+  .loaction{
+    .lh(45px);
+    a{
+      .c(#222);
+    }
+  }
+}
+.page_footer{
+  .bg(#f0f0f0);
+  .pd(10px);
+  a{
+    .d-b;
+    .s(100%,30px);
+    .lh(30px);
+    .ta-c;
+    .fz(1.3rem);
+    .c(#969696);
+  }
+}
